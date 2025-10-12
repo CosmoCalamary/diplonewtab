@@ -1,0 +1,12 @@
+allowHTML: true
+varsPreset: default
+strict: false
+singlePage: false
+apply-presets: true
+output-format: html
+lint: false
+ignore:
+  - node_modules
+  - .git
+  - .github
+  - output

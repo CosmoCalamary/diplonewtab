@@ -1,4 +1,10 @@
-langs: ['ru', 'en']
-
-docs-viewer:
-  langs: ['en','ru']
+allowHTML: true
+varsPreset: default
+strict: false
+singlePage: false
+apply-presets: true
+output-format: html
+ignore:
+  - node_modules
+  - .git
+  - .github

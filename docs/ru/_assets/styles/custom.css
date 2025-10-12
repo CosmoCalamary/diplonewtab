@@ -1,0 +1,218 @@
+/* Фиолетовая тема для diplonewtab */
+
+:root {
+  --yfm-color-base-brand: #8b5cf6;
+  --yfm-color-base-brand-hover: #7c3aed;
+  --yfm-color-text-link: #8b5cf6;
+  --yfm-color-text-link-hover: #7c3aed;
+  --accent-purple: #8b5cf6;
+  --accent-purple-light: #a78bfa;
+  --accent-purple-dark: #6d28d9;
+}
+
+/* Темная тема */
+[data-theme='dark'] {
+  --yfm-color-base-background: #1a1a2e;
+  --yfm-color-base-background-hover: #16213e;
+  --yfm-color-base-selection: #8b5cf630;
+  --yfm-color-text-primary: #eaeaea;
+  --yfm-color-text-secondary: #b4b4b4;
+  --yfm-color-base-brand: #a78bfa;
+  --yfm-color-base-brand-hover: #c4b5fd;
+}
+
+/* Светлая тема */
+[data-theme='light'] {
+  --yfm-color-base-background: #ffffff;
+  --yfm-color-base-background-hover: #f9fafb;
+  --yfm-color-base-selection: #8b5cf620;
+  --yfm-color-text-primary: #1f2937;
+  --yfm-color-text-secondary: #6b7280;
+}
+
+/* Стилизация заголовков */
+h1 {
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+h2, h3 {
+  color: var(--accent-purple);
+}
+
+/* Стилизация ссылок */
+a {
+  color: var(--accent-purple);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--accent-purple-light);
+  text-decoration: underline;
+}
+
+/* Стилизация списков */
+ul li strong {
+  color: var(--accent-purple);
+}
+
+/* Стилизация катов (cuts) */
+.yfm-cut {
+  border-left: 3px solid var(--accent-purple);
+  padding-left: 16px;
+  margin: 16px 0;
+  transition: all 0.3s ease;
+}
+
+.yfm-cut:hover {
+  border-left-color: var(--accent-purple-light);
+  background: var(--yfm-color-base-background-hover);
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.yfm-cut-title {
+  color: var(--accent-purple) !important;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.1em;
+}
+
+.yfm-cut-title:hover {
+  color: var(--accent-purple-light) !important;
+}
+
+/* Стилизация табов */
+.yfm-tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.yfm-tabs-list {
+  background: var(--yfm-color-base-background-hover);
+  border-bottom: 2px solid var(--accent-purple);
+}
+
+.yfm-tab {
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.yfm-tab[aria-selected='true'] {
+  background: var(--accent-purple) !important;
+  color: white !important;
+}
+
+.yfm-tab:hover:not([aria-selected='true']) {
+  background: rgba(139, 92, 246, 0.1);
+}
+
+/* Стилизация заметок */
+.yfm-note {
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-purple);
+  padding: 12px 16px;
+  margin: 16px 0;
+}
+
+.yfm-note-warning {
+  border-left-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.yfm-note-info {
+  border-left-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.yfm-note-tip {
+  border-left-color: #10b981;
+  background: rgba(16, 185, 129, 0.1);
+}
+
+/* Скролл бар */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--yfm-color-base-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-purple);
+  border-radius: 6px;
+  border: 2px solid var(--yfm-color-base-background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-purple-light);
+}
+
+/* Навигация */
+.yfm-nav-tree-item-active {
+  color: var(--accent-purple) !important;
+  font-weight: 600 !important;
+}
+
+/* Улучшение читаемости */
+.yfm-content p {
+  line-height: 1.7;
+}
+
+.yfm-content li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .yfm-cut {
+    padding-left: 12px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.yfm-content > * {
+  animation: fadeIn 0.4s ease;
+}
+
+/* Hover эффекты для секций */
+.yfm-content h2 {
+  padding-left: 8px;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.yfm-content h2:hover {
+  border-left-color: var(--accent-purple);
+  padding-left: 12px;
+}
+
+/* Эмодзи в заголовках */
+h1::before, h2::before, h3::before {
+  margin-right: 8px;
+}

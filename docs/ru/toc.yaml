@@ -1,13 +1,225 @@
-title: Шаблон проекта документации
-href: index.yaml
-items: 
-  - name: О проекте вот как выйдет
-    href: about.md
-  - name: Дополнительная страница
-    href: page.md
-  - name: Другая страница
-    href: anotherpage.md
-  - name: Подраздел
-    include:
-      path: sub-section/toc.yaml
-      mode: link
+title: diplonewtab
+href: index.md
+items:
+  - name: 🏠 Главная
+    href: index.md
+
+  - name: 🌐 Интернет
+    href: pages/internet.md
+    items:
+      - name: Поисковики
+        href: pages/internet.md#poiskoviki
+      - name: Облака
+        href: pages/internet.md#oblaka
+      - name: Почта
+        href: pages/internet.md#pochta
+      - name: Соцсети
+        href: pages/internet.md#sotsseti
+      - name: Скорость
+        href: pages/internet.md#skorost
+      - name: Айпи
+        href: pages/internet.md#aypi
+      - name: Сервисы
+        href: pages/internet.md#servisy
+      - name: Разное полезное
+        href: pages/internet.md#raznoe-poleznoe
+
+  - name: 🤖 AI
+    href: pages/ai.md
+    items:
+      - name: Чаты
+        href: pages/ai.md#chaty
+      - name: Промпты
+        href: pages/ai.md#prompty
+      - name: Офисные помощники
+        href: pages/ai.md#ofisnye-pomoschniki
+      - name: Саммари
+        href: pages/ai.md#sammari
+      - name: Изображения
+        href: pages/ai.md#izobrazheniya
+      - name: Звук
+        href: pages/ai.md#zvuk
+      - name: Видео
+        href: pages/ai.md#video
+
+  - name: 🏥 Медицина
+    href: pages/medicina.md
+    items:
+      - name: Инструменты
+        href: pages/medicina.md#instrumenty
+      - name: Укладки
+        href: pages/medicina.md#ukladki
+      - name: Анатомия
+        href: pages/medicina.md#anatomiya
+      - name: Ресурсы
+        href: pages/medicina.md#resursy
+      - name: Обучение
+        href: pages/medicina.md#obuchenie
+      - name: Тесты НМО
+        href: pages/medicina.md#testy-nmo
+      - name: Поиск работы
+        href: pages/medicina.md#poisk-raboty
+
+  - name: 🎵 Music Makes
+    href: pages/music-makes.md
+    items:
+      - name: Витрины битов
+        href: pages/music-makes.md#vitriny-bitov
+      - name: Гострайтинг
+        href: pages/music-makes.md#gostraiting
+      - name: Стоки
+        href: pages/music-makes.md#stoki
+      - name: Источники музыки
+        href: pages/music-makes.md#istochniki-muzyki
+      - name: Прикладное
+        href: pages/music-makes.md#prikladnoe
+      - name: Удобство написания
+        href: pages/music-makes.md#udobstvo-napisaniya
+      - name: Авторские права
+        href: pages/music-makes.md#avtorskie-prava
+      - name: Samples
+        href: pages/music-makes.md#samples
+      - name: Скачать
+        href: pages/music-makes.md#skachat
+
+  - name: 📝 Офис
+    href: pages/ofis.md
+    items:
+      - name: Перевод текста
+        href: pages/ofis.md#perevod-teksta
+      - name: Рерайт текста
+        href: pages/ofis.md#rerait-teksta
+      - name: Проверка грамматики
+        href: pages/ofis.md#proverka-grammatiki
+      - name: Сравнение документов
+        href: pages/ofis.md#sravnenie-dokumentov
+      - name: Майндкарты
+        href: pages/ofis.md#maindkarty
+      - name: Доски канбан
+        href: pages/ofis.md#doski-kanban
+      - name: Поэзия
+        href: pages/ofis.md#poeziya
+      - name: Изображения
+        href: pages/ofis.md#izobrazheniya
+      - name: Инфографика
+        href: pages/ofis.md#infografika
+      - name: Разное
+        href: pages/ofis.md#raznoe
+
+  - name: 🎬 Контент :: Офишл
+    href: pages/kontent-ofishl.md
+    items:
+      - name: Кино
+        href: pages/kontent-ofishl.md#kino
+      - name: Музыкальное
+        href: pages/kontent-ofishl.md#muzykalnoe
+      - name: Музыка на YouTube
+        href: pages/kontent-ofishl.md#muzyka-youtube
+      - name: Книги
+        href: pages/kontent-ofishl.md#knigi
+      - name: Игры
+        href: pages/kontent-ofishl.md#igry
+      - name: IPTV
+        href: pages/kontent-ofishl.md#iptv
+
+  - name: 🛒 Покупки
+    href: pages/pokupki.md
+    items:
+      - name: Маркетплейсы RU
+        href: pages/pokupki.md#marketpleisy-ru
+      - name: Маркетплейсы зарубеж
+        href: pages/pokupki.md#marketpleisy-zarubezh
+      - name: Сайты с лицензиями
+        href: pages/pokupki.md#saity-s-licenziyami
+
+  - name: 🏴‍☠️ Контент :: Задворки
+    href: pages/kontent-zadvorki.md
+    items:
+      - name: Трекеры
+        href: pages/kontent-zadvorki.md#trekery
+      - name: Софт и игры
+        href: pages/kontent-zadvorki.md#soft-igry
+      - name: Кино
+        href: pages/kontent-zadvorki.md#kino
+      - name: Музыка
+        href: pages/kontent-zadvorki.md#muzyka
+      - name: Скачать контент
+        href: pages/kontent-zadvorki.md#skachat-kontent
+      - name: Книги
+        href: pages/kontent-zadvorki.md#knigi
+      - name: Интернет
+        href: pages/kontent-zadvorki.md#internet
+      - name: Товары
+        href: pages/kontent-zadvorki.md#tovary
+      - name: Поиск
+        href: pages/kontent-zadvorki.md#poisk
+      - name: Onion
+        href: pages/kontent-zadvorki.md#onion
+
+  - name: 📚 Обучение
+    href: pages/obuchenie.md
+    items:
+      - name: Школа
+        href: pages/obuchenie.md#shkola
+      - name: Слепая печать
+        href: pages/obuchenie.md#slepaya-pechat
+      - name: IT
+        href: pages/obuchenie.md#it
+
+  - name: 💻 Разработка
+    href: pages/razrabotka.md
+    items:
+      - name: Прикладное
+        href: pages/razrabotka.md#prikladnoe
+      - name: Markdown
+        href: pages/razrabotka.md#markdown
+      - name: Python
+        href: pages/razrabotka.md#python
+
+  - name: 🔒 IT - Безопасность
+    href: pages/it-bezopasnost.md
+
+  - name: 🔍 IT - Поиск
+    href: pages/it-poisk.md
+    items:
+      - name: Номера телефонов
+        href: pages/it-poisk.md#nomera-telefonov
+      - name: Соцсети
+        href: pages/it-poisk.md#sotsseti
+      - name: Расширения Firefox
+        href: pages/it-poisk.md#rasshireniya-firefox
+      - name: Форумы
+        href: pages/it-poisk.md#forumy
+      - name: OS
+        href: pages/it-poisk.md#os
+      - name: Разное
+        href: pages/it-poisk.md#raznoe
+
+  - name: 🎨 Дизайн
+    href: pages/dizayn.md
+    items:
+      - name: Изображения
+        href: pages/dizayn.md#izobrazheniya
+      - name: Шрифты
+        href: pages/dizayn.md#shrifty
+      - name: Иконки
+        href: pages/dizayn.md#ikonki
+      - name: Видео
+        href: pages/dizayn.md#video
+      - name: Скачать
+        href: pages/dizayn.md#skachat
+
+  - name: 🎮 Досуг
+    href: pages/dosug.md
+    items:
+      - name: Игры
+        href: pages/dosug.md#igry
+
+  - name: 🖥️ Оборудование
+    href: pages/oborudovanie.md
+    items:
+      - name: Мониторы
+        href: pages/oborudovanie.md#monitory
+
+  - name: 🚗 Авто
+    href: pages/avto.md
