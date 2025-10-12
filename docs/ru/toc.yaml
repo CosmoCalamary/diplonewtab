@@ -106,7 +106,7 @@ items:
       - name: Разное
         href: pages/ofis.md#raznoe
 
-  - name: 🎬 Контент :: Офишл
+  - name: 🎬 Контент - Офишл
     href: pages/kontent-ofishl.md
     items:
       - name: Кино
@@ -132,7 +132,7 @@ items:
       - name: Сайты с лицензиями
         href: pages/pokupki.md#saity-s-licenziyami
 
-  - name: 🏴‍☠️ Контент :: Задворки
+  - name: 🏴‍☠️ Контент - Задворки
     href: pages/kontent-zadvorki.md
     items:
       - name: Трекеры
