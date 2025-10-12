@@ -13,134 +13,106 @@ description: Стартовая страница с полезными ссыл�
 
 ## 📂 Основные категории
 
-{% cut "🌐 Интернет" %}
+<div class="category-grid">
 
-Поисковики, облачные хранилища, почта, соцсети, проверка скорости и IP-адресов.
+<a href="pages/internet.md" class="category-card">
+<div class="category-icon">🌐</div>
+<div class="category-title">Интернет</div>
+<div class="category-desc">Поисковики, облачные хранилища, почта, соцсети, проверка скорости и IP-адресов.</div>
+</a>
 
-[Перейти к категории →](pages/internet.md)
+<a href="pages/ai.md" class="category-card">
+<div class="category-icon">🤖</div>
+<div class="category-title">AI</div>
+<div class="category-desc">ChatGPT, Gemini, Perplexity и другие AI-чаты. Генерация изображений, музыки, видео.</div>
+</a>
 
-{% endcut %}
+<a href="pages/medicina.md" class="category-card">
+<div class="category-icon">🏥</div>
+<div class="category-title">Медицина</div>
+<div class="category-desc">Калькуляторы дозы КТ, анатомические атласы, тесты НМО, ресурсы для рентгенолаборантов.</div>
+</a>
 
-{% cut "🤖 AI" %}
+<a href="pages/music-makes.md" class="category-card">
+<div class="category-icon">🎵</div>
+<div class="category-title">Music Makes</div>
+<div class="category-desc">Витрины битов (BeatStars, SoundClick), гострайтинг, стоки, samples, инструменты для музыкантов.</div>
+</a>
 
-ChatGPT, Gemini, Perplexity и другие AI-чаты. Генерация изображений, музыки, видео. Офисные помощники на базе AI.
+<a href="pages/ofis.md" class="category-card">
+<div class="category-icon">📝</div>
+<div class="category-title">Офис</div>
+<div class="category-desc">Перевод текста, рерайт, проверка грамматики, майндкарты, доски канбан.</div>
+</a>
 
-[Перейти к категории →](pages/ai.md)
+<a href="pages/kontent-ofishl.md" class="category-card">
+<div class="category-icon">🎬</div>
+<div class="category-title">Контент - Офишл</div>
+<div class="category-desc">Легальные сервисы: Кинопоиск, Okko, Яндекс.Музыка, YouTube, книги, игры.</div>
+</a>
 
-{% endcut %}
+<a href="pages/pokupki.md" class="category-card">
+<div class="category-icon">🛒</div>
+<div class="category-title">Покупки</div>
+<div class="category-desc">Маркетплейсы России и зарубежные, сайты с лицензиями и скидками.</div>
+</a>
 
-{% cut "🏥 Медицина" %}
+<a href="pages/kontent-zadvorki.md" class="category-card">
+<div class="category-icon">🏴‍☠️</div>
+<div class="category-title">Контент - Задворки</div>
+<div class="category-desc">Альтернативные источники контента.</div>
+</a>
 
-Калькуляторы дозы КТ, анатомические атласы, тесты НМО, ресурсы для рентгенолаборантов.
+<a href="pages/obuchenie.md" class="category-card">
+<div class="category-icon">📚</div>
+<div class="category-title">Обучение</div>
+<div class="category-desc">Школьные ресурсы, учебники, клавиатурные тренажёры, IT-курсы.</div>
+</a>
 
-[Перейти к категории →](pages/medicina.md)
+<a href="pages/razrabotka.md" class="category-card">
+<div class="category-icon">💻</div>
+<div class="category-title">Разработка</div>
+<div class="category-desc">GitHub, GitLab, PageSpeed Insights, документация Python, онлайн-компиляторы.</div>
+</a>
 
-{% endcut %}
+<a href="pages/it-bezopasnost.md" class="category-card">
+<div class="category-icon">🔒</div>
+<div class="category-title">IT - Безопасность</div>
+<div class="category-desc">Инструменты и ресурсы для информационной безопасности.</div>
+</a>
 
-{% cut "🎵 Music Makes" %}
+<a href="pages/it-poisk.md" class="category-card">
+<div class="category-icon">🔍</div>
+<div class="category-title">IT - Поиск</div>
+<div class="category-desc">Поиск номеров телефонов, соцсетей, расширений Firefox, форумов.</div>
+</a>
 
-Витрины битов (BeatStars, SoundClick), гострайтинг, стоки, samples, инструменты для музыкантов.
+<a href="pages/dizayn.md" class="category-card">
+<div class="category-icon">🎨</div>
+<div class="category-title">Дизайн</div>
+<div class="category-desc">Dribbble, Behance, стоковые изображения, шрифты, иконки, видео для фона.</div>
+</a>
 
-[Перейти к категории →](pages/music-makes.md)
+<a href="pages/dosug.md" class="category-card">
+<div class="category-icon">🎮</div>
+<div class="category-title">Досуг</div>
+<div class="category-desc">Развлекательные ресурсы и игры.</div>
+</a>
 
-{% endcut %}
+<a href="pages/oborudovanie.md" class="category-card">
+<div class="category-icon">🖥️</div>
+<div class="category-title">Оборудование</div>
+<div class="category-desc">Информация о компьютерном оборудовании.</div>
+</a>
 
-{% cut "📝 Офис" %}
+<a href="pages/avto.md" class="category-card">
+<div class="category-icon">🚗</div>
+<div class="category-title">Авто</div>
+<div class="category-desc">Автомобильные ресурсы.</div>
+</a>
 
-Перевод текста, рерайт, проверка грамматики, майндкарты, доски канбан.
-
-[Перейти к категории →](pages/ofis.md)
-
-{% endcut %}
-
-{% cut "🎬 Контент - Офишл" %}
-
-Легальные сервисы: Кинопоиск, Okko, Яндекс.Музыка, YouTube, книги, игры.
-
-[Перейти к категории →](pages/kontent-ofishl.md)
-
-{% endcut %}
-
-{% cut "🛒 Покупки" %}
-
-Маркетплейсы России и зарубежные, сайты с лицензиями и скидками.
-
-[Перейти к категории →](pages/pokupki.md)
-
-{% endcut %}
-
-{% cut "🏴‍☠️ Контент - Задворки" %}
-
-Альтернативные источники контента.
-
-[Перейти к категории →](pages/kontent-zadvorki.md)
-
-{% endcut %}
-
-{% cut "📚 Обучение" %}
-
-Школьные ресурсы, учебники, клавиатурные тренажёры, IT-курсы.
-
-[Перейти к категории →](pages/obuchenie.md)
-
-{% endcut %}
-
-{% cut "💻 Разработка" %}
-
-GitHub, GitLab, PageSpeed Insights, документация Python, онлайн-компиляторы.
-
-[Перейти к категории →](pages/razrabotka.md)
-
-{% endcut %}
-
-{% cut "🔒 IT - Безопасность" %}
-
-Инструменты и ресурсы для информационной безопасности.
-
-[Перейти к категории →](pages/it-bezopasnost.md)
-
-{% endcut %}
-
-{% cut "🔍 IT - Поиск" %}
-
-Поиск номеров телефонов, соцсетей, расширений Firefox, форумов.
-
-[Перейти к категории →](pages/it-poisk.md)
-
-{% endcut %}
-
-{% cut "🎨 Дизайн" %}
-
-Dribbble, Behance, стоковые изображения, шрифты, иконки, видео для фона.
-
-[Перейти к категории →](pages/dizayn.md)
-
-{% endcut %}
-
-{% cut "🎮 Досуг" %}
-
-Развлекательные ресурсы и игры.
-
-[Перейти к категории →](pages/dosug.md)
-
-{% endcut %}
-
-{% cut "🖥️ Оборудование" %}
-
-Информация о компьютерном оборудовании.
-
-[Перейти к категории →](pages/oborudovanie.md)
-
-{% endcut %}
-
-{% cut "🚗 Авто" %}
-
-Автомобильные ресурсы.
-
-[Перейти к категории →](pages/avto.md)
-
-{% endcut %}
+</div>
 
 ---
 
-**Версия:** 1.0.0 | **Последнее обновление:** 10.10.2025
+**Версия:** 1.0.0 | **Последнее обновление:** 12.10.2025
