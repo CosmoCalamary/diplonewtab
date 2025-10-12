@@ -327,3 +327,76 @@ h1::before, h2::before, h3::before {
     font-size: 18px;
   }
 }
+
+/* ========================================
+   КАРТОЧКИ В СТИЛЕ DIPLODOC
+   ======================================== */
+
+/* Контейнер для карточек */
+.yfm-content ul:has(li > strong > a) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+/* Карточка */
+.yfm-content ul:has(li > strong > a) > li {
+  background: var(--yfm-color-base-background);
+  border: 1px solid var(--yfm-color-line-generic);
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.yfm-content ul:has(li > strong > a) > li:hover {
+  border-color: var(--accent-purple);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Заголовок карточки */
+.yfm-content ul:has(li > strong > a) strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: var(--yfm-color-text-primary);
+}
+
+.yfm-content ul:has(li > strong > a) strong a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+}
+
+.yfm-content ul:has(li > strong > a) strong a:hover {
+  color: var(--accent-purple);
+}
+
+/* Описание карточки */
+.yfm-content ul:has(li > strong > a) > li > :not(strong) {
+  font-size: 14px;
+  color: var(--yfm-color-text-secondary);
+  line-height: 1.5;
+}
+
+/* Темная тема */
+[data-theme='dark'] .yfm-content ul:has(li > strong > a) > li {
+  background: rgba(26, 26, 46, 0.4);
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+[data-theme='dark'] .yfm-content ul:has(li > strong > a) > li:hover {
+  background: rgba(26, 26, 46, 0.6);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .yfm-content ul:has(li > strong > a) {
+    grid-template-columns: 1fr;
+  }
+}
