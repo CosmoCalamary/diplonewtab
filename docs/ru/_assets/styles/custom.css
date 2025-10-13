@@ -1,5 +1,5 @@
 /* ========================================
-   ФИОЛЕТОВАЯ ТЕМА ДЛЯ DIPLONEWTAB
+   ФИОЛЕТОВАЯ ТЕМА
    ======================================== */
 
 :root {
@@ -12,7 +12,6 @@
   --accent-purple-dark: #6d28d9;
 }
 
-/* Темная тема */
 [data-theme='dark'] {
   --yfm-color-base-background: #1a1a2e;
   --yfm-color-base-background-hover: #16213e;
@@ -23,7 +22,6 @@
   --yfm-color-base-brand-hover: #c4b5fd;
 }
 
-/* Светлая тема */
 [data-theme='light'] {
   --yfm-color-base-background: #ffffff;
   --yfm-color-base-background-hover: #f9fafb;
@@ -34,30 +32,35 @@
 
 
 /* ========================================
-   БОЛЬШИЕ КНОПКИ ОДИНАКОВОГО РАЗМЕРА
+   БОЛЬШИЕ КНОПКИ - УСИЛЕННЫЕ СЕЛЕКТОРЫ
    ======================================== */
 
-/* Убираем границы у контейнеров */
-.pc-card-layout-block .pc-layout-item {
+/* Контейнеры */
+.pc-card-layout-block .pc-layout-item,
+.yfm-content .pc-card-layout-block .pc-layout-item {
   border: none !important;
-  padding: 8px !important;
+  padding: 10px !important;
   background: transparent !important;
   box-shadow: none !important;
 }
 
-/* ФИКСИРОВАННЫЙ РАЗМЕР КНОПОК */
-.pc-card-layout-block .pc-layout-item .g-button {
+/* КНОПКИ - МАКСИМАЛЬНАЯ СПЕЦИФИЧНОСТЬ */
+.yfm-content .pc-card-layout-block .pc-layout-item .g-button,
+.yfm-content .pc-card-layout-block .pc-layout-item button,
+.pc-card-layout-block .pc-layout-item .g-button,
+.pc-card-layout-block .pc-layout-item button,
+button.g-button {
   width: 100% !important;
-  height: 100px !important;
-  min-height: 100px !important;
-  max-height: 100px !important;
-  padding: 20px 24px !important;
-  font-size: 18px !important;
+  height: 110px !important;
+  min-height: 110px !important;
+  max-height: 110px !important;
+  padding: 24px !important;
+  font-size: 19px !important;
   font-weight: 600 !important;
   line-height: 1.3 !important;
   border-radius: 12px !important;
-  border: 2px solid rgba(139, 92, 246, 0.3) !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  border: 2px solid rgba(139, 92, 246, 0.35) !important;
+  transition: all 0.3s ease !important;
   white-space: normal !important;
   word-wrap: break-word !important;
   text-align: center !important;
@@ -65,44 +68,48 @@
   align-items: center !important;
   justify-content: center !important;
   background: var(--yfm-color-base-background) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+  color: var(--yfm-color-text-primary) !important;
   cursor: pointer !important;
 }
 
-/* Цвет текста кнопок */
-.pc-card-layout-block .pc-layout-item .g-button {
-  color: var(--yfm-color-text-primary) !important;
-}
-
-/* Hover эффект */
-.pc-card-layout-block .pc-layout-item .g-button:hover {
-  transform: translateY(-4px) !important;
+/* Hover */
+.yfm-content .pc-card-layout-block .pc-layout-item .g-button:hover,
+.pc-card-layout-block .pc-layout-item .g-button:hover,
+button.g-button:hover {
+  transform: translateY(-5px) !important;
   border-color: var(--accent-purple) !important;
-  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.3) !important;
-  background: rgba(139, 92, 246, 0.05) !important;
+  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.35) !important;
+  background: rgba(139, 92, 246, 0.08) !important;
   color: var(--accent-purple) !important;
 }
 
-/* Активное состояние */
-.pc-card-layout-block .pc-layout-item .g-button:active {
+/* Active */
+.yfm-content .pc-card-layout-block .pc-layout-item .g-button:active,
+.pc-card-layout-block .pc-layout-item .g-button:active,
+button.g-button:active {
   transform: translateY(-2px) !important;
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25) !important;
+  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3) !important;
 }
 
 
 /* ========================================
-   ТЕМНАЯ ТЕМА ДЛЯ КНОПОК
+   ТЕМНАЯ ТЕМА
    ======================================== */
 
-[data-theme='dark'] .pc-card-layout-block .pc-layout-item .g-button {
-  border-color: rgba(139, 92, 246, 0.4) !important;
-  background: rgba(26, 26, 46, 0.5) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+[data-theme='dark'] .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
+[data-theme='dark'] .pc-card-layout-block .pc-layout-item .g-button,
+[data-theme='dark'] button.g-button {
+  border-color: rgba(139, 92, 246, 0.45) !important;
+  background: rgba(26, 26, 46, 0.6) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) !important;
 }
 
-[data-theme='dark'] .pc-card-layout-block .pc-layout-item .g-button:hover {
-  background: rgba(26, 26, 46, 0.7) !important;
-  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4) !important;
+[data-theme='dark'] .yfm-content .pc-card-layout-block .pc-layout-item .g-button:hover,
+[data-theme='dark'] .pc-card-layout-block .pc-layout-item .g-button:hover,
+[data-theme='dark'] button.g-button:hover {
+  background: rgba(26, 26, 46, 0.8) !important;
+  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.5) !important;
   border-color: var(--accent-purple-light) !important;
 }
 
@@ -111,34 +118,37 @@
    АДАПТИВНОСТЬ
    ======================================== */
 
-/* Планшеты */
 @media (max-width: 1024px) {
-  .pc-card-layout-block .pc-layout-item .g-button {
-    height: 95px !important;
-    min-height: 95px !important;
-    max-height: 95px !important;
-    font-size: 17px !important;
+  .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
+  .pc-card-layout-block .pc-layout-item .g-button,
+  button.g-button {
+    height: 100px !important;
+    min-height: 100px !important;
+    max-height: 100px !important;
+    font-size: 18px !important;
   }
 }
 
-/* Мобильные устройства */
 @media (max-width: 768px) {
-  .pc-card-layout-block .pc-layout-item .g-button {
-    height: 85px !important;
-    min-height: 85px !important;
-    max-height: 85px !important;
-    font-size: 16px !important;
-    padding: 16px 20px !important;
+  .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
+  .pc-card-layout-block .pc-layout-item .g-button,
+  button.g-button {
+    height: 90px !important;
+    min-height: 90px !important;
+    max-height: 90px !important;
+    font-size: 17px !important;
+    padding: 20px !important;
   }
 }
 
-/* Маленькие экраны */
 @media (max-width: 480px) {
-  .pc-card-layout-block .pc-layout-item .g-button {
-    height: 75px !important;
-    min-height: 75px !important;
-    max-height: 75px !important;
-    font-size: 15px !important;
-    padding: 12px 16px !important;
+  .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
+  .pc-card-layout-block .pc-layout-item .g-button,
+  button.g-button {
+    height: 80px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+    font-size: 16px !important;
+    padding: 16px !important;
   }
 }
