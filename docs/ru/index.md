@@ -1,145 +1,24 @@
 ---
 title: diplonewtab
-description: Стартовая страница с полезными ссылками
 ---
 
 ## 📂 Навигация
 
-::: page-constructor
-blocks:
-  - type: 'card-layout-block'
-    colSizes:
-      all: 12
-      xl: 3
-      lg: 4
-      md: 6
-      sm: 12
-    children:
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🌐 Интернет'
-              url: 'pages/internet.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🤖 AI'
-              url: 'pages/ai.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🏥 Медицина'
-              url: 'pages/medicina.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🎵 Music Makes'
-              url: 'pages/music-makes.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '📝 Офис'
-              url: 'pages/ofis.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🎬 Контент - Офишл'
-              url: 'pages/kontent-ofishl.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🛒 Покупки'
-              url: 'pages/pokupki.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🏴‍☠️ Контент - Задворки'
-              url: 'pages/kontent-zadvorki.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '📚 Обучение'
-              url: 'pages/obuchenie.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '💻 Разработка'
-              url: 'pages/razrabotka.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🔒 IT - Безопасность'
-              url: 'pages/it-bezopasnost.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🔍 IT - Поиск'
-              url: 'pages/it-poisk.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🎨 Дизайн'
-              url: 'pages/dizayn.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🎮 Досуг'
-              url: 'pages/dosug.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🖥️ Оборудование'
-              url: 'pages/oborudovanie.md'
-              theme: 'outlined'
-              size: 'xl'
-
-      - type: 'layout-item'
-        content:
-          buttons:
-            - text: '🚗 Авто'
-              url: 'pages/avto.md'
-              theme: 'outlined'
-              size: 'xl'
-:::
+<div class="nav-grid">
+  <a href="pages/internet.md" class="nav-btn">🌐 Интернет</a>
+  <a href="pages/ai.md" class="nav-btn">🤖 AI</a>
+  <a href="pages/medicina.md" class="nav-btn">🏥 Медицина</a>
+  <a href="pages/music-makes.md" class="nav-btn">🎵 Music Makes</a>
+  <a href="pages/ofis.md" class="nav-btn">📝 Офис</a>
+  <a href="pages/kontent-ofishl.md" class="nav-btn">🎬 Контент - Офишл</a>
+  <a href="pages/pokupki.md" class="nav-btn">🛒 Покупки</a>
+  <a href="pages/kontent-zadvorki.md" class="nav-btn">🏴‍☠️ Контент - Задворки</a>
+  <a href="pages/obuchenie.md" class="nav-btn">📚 Обучение</a>
+  <a href="pages/razrabotka.md" class="nav-btn">💻 Разработка</a>
+  <a href="pages/it-bezopasnost.md" class="nav-btn">🔒 IT - Безопасность</a>
+  <a href="pages/it-poisk.md" class="nav-btn">🔍 IT - Поиск</a>
+  <a href="pages/dizayn.md" class="nav-btn">🎨 Дизайн</a>
+  <a href="pages/dosug.md" class="nav-btn">🎮 Досуг</a>
+  <a href="pages/oborudovanie.md" class="nav-btn">🖥️ Оборудование</a>
+  <a href="pages/avto.md" class="nav-btn">🚗 Авто</a>
+</div>

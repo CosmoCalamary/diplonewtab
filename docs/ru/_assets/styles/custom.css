@@ -1,154 +1,102 @@
-/* ========================================
-   ФИОЛЕТОВАЯ ТЕМА
-   ======================================== */
-
+/* Фиолетовая тема */
 :root {
   --yfm-color-base-brand: #8b5cf6;
   --yfm-color-base-brand-hover: #7c3aed;
   --yfm-color-text-link: #8b5cf6;
   --yfm-color-text-link-hover: #7c3aed;
-  --accent-purple: #8b5cf6;
-  --accent-purple-light: #a78bfa;
-  --accent-purple-dark: #6d28d9;
 }
-
-[data-theme='dark'] {
-  --yfm-color-base-background: #1a1a2e;
-  --yfm-color-base-background-hover: #16213e;
-  --yfm-color-base-selection: #8b5cf630;
-  --yfm-color-text-primary: #eaeaea;
-  --yfm-color-text-secondary: #b4b4b4;
-  --yfm-color-base-brand: #a78bfa;
-  --yfm-color-base-brand-hover: #c4b5fd;
-}
-
-[data-theme='light'] {
-  --yfm-color-base-background: #ffffff;
-  --yfm-color-base-background-hover: #f9fafb;
-  --yfm-color-base-selection: #8b5cf620;
-  --yfm-color-text-primary: #1f2937;
-  --yfm-color-text-secondary: #6b7280;
-}
-
 
 /* ========================================
-   БОЛЬШИЕ КНОПКИ - УСИЛЕННЫЕ СЕЛЕКТОРЫ
+   БОЛЬШИЕ КНОПКИ НА ГЛАВНОЙ СТРАНИЦЕ
    ======================================== */
 
-/* Контейнеры */
-.pc-card-layout-block .pc-layout-item,
-.yfm-content .pc-card-layout-block .pc-layout-item {
-  border: none !important;
-  padding: 10px !important;
-  background: transparent !important;
-  box-shadow: none !important;
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 30px 0;
 }
 
-/* КНОПКИ - МАКСИМАЛЬНАЯ СПЕЦИФИЧНОСТЬ */
-.yfm-content .pc-card-layout-block .pc-layout-item .g-button,
-.yfm-content .pc-card-layout-block .pc-layout-item button,
-.pc-card-layout-block .pc-layout-item .g-button,
-.pc-card-layout-block .pc-layout-item button,
-button.g-button {
-  width: 100% !important;
-  height: 110px !important;
-  min-height: 110px !important;
-  max-height: 110px !important;
-  padding: 24px !important;
-  font-size: 19px !important;
-  font-weight: 600 !important;
-  line-height: 1.3 !important;
-  border-radius: 12px !important;
-  border: 2px solid rgba(139, 92, 246, 0.35) !important;
-  transition: all 0.3s ease !important;
-  white-space: normal !important;
-  word-wrap: break-word !important;
-  text-align: center !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  background: var(--yfm-color-base-background) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
-  color: var(--yfm-color-text-primary) !important;
-  cursor: pointer !important;
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+  padding: 28px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--yfm-color-text-primary);
+  background: var(--yfm-color-base-background);
+  border: 2px solid rgba(139, 92, 246, 0.35);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-/* Hover */
-.yfm-content .pc-card-layout-block .pc-layout-item .g-button:hover,
-.pc-card-layout-block .pc-layout-item .g-button:hover,
-button.g-button:hover {
-  transform: translateY(-5px) !important;
-  border-color: var(--accent-purple) !important;
-  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.35) !important;
-  background: rgba(139, 92, 246, 0.08) !important;
-  color: var(--accent-purple) !important;
+.nav-btn:hover {
+  transform: translateY(-5px);
+  border-color: #8b5cf6;
+  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.35);
+  background: rgba(139, 92, 246, 0.08);
+  color: #8b5cf6;
+  text-decoration: none;
 }
 
-/* Active */
-.yfm-content .pc-card-layout-block .pc-layout-item .g-button:active,
-.pc-card-layout-block .pc-layout-item .g-button:active,
-button.g-button:active {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3) !important;
+.nav-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
 }
 
+/* Темная тема для кнопок */
+[data-theme='dark'] .nav-btn {
+  background: rgba(26, 26, 46, 0.6);
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .nav-btn:hover {
+  background: rgba(26, 26, 46, 0.8);
+  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.5);
+  border-color: #a78bfa;
+}
 
 /* ========================================
-   ТЕМНАЯ ТЕМА
+   СТИЛИЗАЦИЯ КАТОВ НА ДРУГИХ СТРАНИЦАХ
    ======================================== */
 
-[data-theme='dark'] .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
-[data-theme='dark'] .pc-card-layout-block .pc-layout-item .g-button,
-[data-theme='dark'] button.g-button {
-  border-color: rgba(139, 92, 246, 0.45) !important;
-  background: rgba(26, 26, 46, 0.6) !important;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4) !important;
+.yfm-cut {
+  margin: 16px 0;
 }
 
-[data-theme='dark'] .yfm-content .pc-card-layout-block .pc-layout-item .g-button:hover,
-[data-theme='dark'] .pc-card-layout-block .pc-layout-item .g-button:hover,
-[data-theme='dark'] button.g-button:hover {
-  background: rgba(26, 26, 46, 0.8) !important;
-  box-shadow: 0 10px 28px rgba(139, 92, 246, 0.5) !important;
-  border-color: var(--accent-purple-light) !important;
+.yfm-cut-title {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: rgba(139, 92, 246, 0.08);
+  border-left: 4px solid #8b5cf6;
+  transition: all 0.2s ease;
 }
 
-
-/* ========================================
-   АДАПТИВНОСТЬ
-   ======================================== */
-
-@media (max-width: 1024px) {
-  .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
-  .pc-card-layout-block .pc-layout-item .g-button,
-  button.g-button {
-    height: 100px !important;
-    min-height: 100px !important;
-    max-height: 100px !important;
-    font-size: 18px !important;
-  }
+.yfm-cut-title:hover {
+  background: rgba(139, 92, 246, 0.12);
+  transform: translateX(4px);
 }
 
+/* Адаптивность */
 @media (max-width: 768px) {
-  .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
-  .pc-card-layout-block .pc-layout-item .g-button,
-  button.g-button {
-    height: 90px !important;
-    min-height: 90px !important;
-    max-height: 90px !important;
-    font-size: 17px !important;
-    padding: 20px !important;
+  .nav-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 12px;
   }
-}
-
-@media (max-width: 480px) {
-  .yfm-content .pc-card-layout-block .pc-layout-item .g-button,
-  .pc-card-layout-block .pc-layout-item .g-button,
-  button.g-button {
-    height: 80px !important;
-    min-height: 80px !important;
-    max-height: 80px !important;
-    font-size: 16px !important;
-    padding: 16px !important;
+  
+  .nav-btn {
+    min-height: 95px;
+    font-size: 18px;
+    padding: 24px 20px;
   }
 }
