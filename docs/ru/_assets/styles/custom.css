@@ -122,3 +122,23 @@
     padding: 20px;
   }
 }
+
+/* Стилизация карточек Page Constructor */
+.pc-card-layout-block .pc-layout-item {
+  transition: all 0.3s ease;
+}
+
+.pc-card-layout-block .pc-layout-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.25) !important;
+  border-color: var(--accent-purple) !important;
+}
+
+/* Фиолетовые ссылки */
+.pc-card-layout-block .pc-layout-item a {
+  color: var(--accent-purple) !important;
+}
+
+.pc-card-layout-block .pc-layout-item a:hover {
+  color: var(--accent-purple-light) !important;
+}
