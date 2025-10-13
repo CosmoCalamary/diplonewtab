@@ -9,7 +9,7 @@ description: Стартовая страница с полезными ссыл�
 
 ## 🔍 Быстрый поиск
 
-Используйте навигацию слева или встроенный поиск (**Ctrl+K**).
+Используйте навигацию слева для быстрого доступа к нужной категории или воспользуйтесь встроенным поиском Diplodoc (нажмите **Ctrl+K**).
 
 ---
 
@@ -31,171 +31,129 @@ blocks:
             - text: '🌐 Интернет'
               url: 'pages/internet.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🤖 AI'
-          text: 'ChatGPT, Gemini, генерация изображений, музыки, видео'
           buttons:
-            - text: 'Открыть'
+            - text: '🤖 AI'
               url: 'pages/ai.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🏥 Медицина'
-          text: 'Калькуляторы дозы КТ, атласы, тесты НМО'
           buttons:
-            - text: 'Открыть'
+            - text: '🏥 Медицина'
               url: 'pages/medicina.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🎵 Music Makes'
-          text: 'BeatStars, гострайтинг, стоки, samples'
           buttons:
-            - text: 'Открыть'
+            - text: '🎵 Music Makes'
               url: 'pages/music-makes.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '📝 Офис'
-          text: 'Перевод, рерайт, проверка грамматики, майндкарты'
           buttons:
-            - text: 'Открыть'
+            - text: '📝 Офис'
               url: 'pages/ofis.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🎬 Контент - Офишл'
-          text: 'Кинопоиск, Okko, Яндекс.Музыка, YouTube, книги'
           buttons:
-            - text: 'Открыть'
+            - text: '🎬 Контент - Офишл'
               url: 'pages/kontent-ofishl.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🛒 Покупки'
-          text: 'Маркетплейсы России и зарубежные, лицензии'
           buttons:
-            - text: 'Открыть'
+            - text: '🛒 Покупки'
               url: 'pages/pokupki.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🏴‍☠️ Контент - Задворки'
-          text: 'Альтернативные источники контента'
           buttons:
-            - text: 'Открыть'
+            - text: '🏴‍☠️ Контент - Задворки'
               url: 'pages/kontent-zadvorki.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '📚 Обучение'
-          text: 'Школа, клавиатурные тренажёры, IT-курсы'
           buttons:
-            - text: 'Открыть'
+            - text: '📚 Обучение'
               url: 'pages/obuchenie.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '💻 Разработка'
-          text: 'GitHub, GitLab, Python, онлайн-компиляторы'
           buttons:
-            - text: 'Открыть'
+            - text: '💻 Разработка'
               url: 'pages/razrabotka.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🔒 IT - Безопасность'
-          text: 'VPN, менеджеры паролей, проверка безопасности'
           buttons:
-            - text: 'Открыть'
+            - text: '🔒 IT - Безопасность'
               url: 'pages/it-bezopasnost.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🔍 IT - Поиск'
-          text: 'OSINT, поиск людей, расширения, форумы'
           buttons:
-            - text: 'Открыть'
+            - text: '🔍 IT - Поиск'
               url: 'pages/it-poisk.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🎨 Дизайн'
-          text: 'Dribbble, Behance, стоки, шрифты, иконки'
           buttons:
-            - text: 'Открыть'
+            - text: '🎨 Дизайн'
               url: 'pages/dizayn.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🎮 Досуг'
-          text: 'Онлайн игры и развлечения'
           buttons:
-            - text: 'Открыть'
+            - text: '🎮 Досуг'
               url: 'pages/dosug.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🖥️ Оборудование'
-          text: 'Мониторы и компьютерные комплектующие'
           buttons:
-            - text: 'Открыть'
+            - text: '🖥️ Оборудование'
               url: 'pages/oborudovanie.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 
       - type: 'layout-item'
         content:
-          title: '🚗 Авто'
-          text: 'Продажа, проверка авто, поиск запчастей'
           buttons:
-            - text: 'Открыть'
+            - text: '🚗 Авто'
               url: 'pages/avto.md'
               theme: 'outlined'
-              size: 'm'
-        border: true
+              size: 'xl'
 :::
+
+---
+
+**Версия:** 1.0.0 | **Последнее обновление:** 13.10.2025
