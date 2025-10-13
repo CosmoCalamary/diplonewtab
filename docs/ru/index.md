@@ -5,7 +5,7 @@ description: Стартовая страница с полезными ссыл�
 
 # 🏠 Добро пожаловать в diplonewtab
 
-Быстрый доступ к самым полезным ресурсам интернета, организованным по категориям.
+Быстрый доступ к самым полезным ресурсам интернета.
 
 ## 🔍 Быстрый поиск
 
@@ -27,177 +27,97 @@ blocks:
     children:
       - type: 'layout-item'
         content:
-          title: '🌐 Интернет'
+          title: '[🌐 Интернет](pages/internet.md)'
           text: 'Поисковики, облачные хранилища, почта, соцсети'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/internet.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🤖 AI'
+          title: '[🤖 AI](pages/ai.md)'
           text: 'ChatGPT, Gemini, генерация изображений, музыки, видео'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/ai.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🏥 Медицина'
+          title: '[🏥 Медицина](pages/medicina.md)'
           text: 'Калькуляторы дозы КТ, атласы, тесты НМО'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/medicina.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🎵 Music Makes'
+          title: '[🎵 Music Makes](pages/music-makes.md)'
           text: 'BeatStars, гострайтинг, стоки, samples'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/music-makes.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '📝 Офис'
+          title: '[📝 Офис](pages/ofis.md)'
           text: 'Перевод, рерайт, проверка грамматики, майндкарты'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/ofis.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🎬 Контент - Офишл'
+          title: '[🎬 Контент - Офишл](pages/kontent-ofishl.md)'
           text: 'Кинопоиск, Okko, Яндекс.Музыка, YouTube, книги'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/kontent-ofishl.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🛒 Покупки'
+          title: '[🛒 Покупки](pages/pokupki.md)'
           text: 'Маркетплейсы России и зарубежные, лицензии'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/pokupki.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🏴‍☠️ Контент - Задворки'
+          title: '[🏴‍☠️ Контент - Задворки](pages/kontent-zadvorki.md)'
           text: 'Альтернативные источники контента'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/kontent-zadvorki.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '📚 Обучение'
+          title: '[📚 Обучение](pages/obuchenie.md)'
           text: 'Школа, клавиатурные тренажёры, IT-курсы'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/obuchenie.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '💻 Разработка'
+          title: '[💻 Разработка](pages/razrabotka.md)'
           text: 'GitHub, GitLab, Python, онлайн-компиляторы'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/razrabotka.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🔒 IT - Безопасность'
+          title: '[🔒 IT - Безопасность](pages/it-bezopasnost.md)'
           text: 'VPN, менеджеры паролей, проверка безопасности'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/it-bezopasnost.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🔍 IT - Поиск'
+          title: '[🔍 IT - Поиск](pages/it-poisk.md)'
           text: 'OSINT, поиск людей, расширения, форумы'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/it-poisk.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🎨 Дизайн'
+          title: '[🎨 Дизайн](pages/dizayn.md)'
           text: 'Dribbble, Behance, стоки, шрифты, иконки'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/dizayn.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🎮 Досуг'
+          title: '[🎮 Досуг](pages/dosug.md)'
           text: 'Онлайн игры и развлечения'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/dosug.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🖥️ Оборудование'
+          title: '[🖥️ Оборудование](pages/oborudovanie.md)'
           text: 'Мониторы и компьютерные комплектующие'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/oborudovanie.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 
       - type: 'layout-item'
         content:
-          title: '🚗 Авто'
+          title: '[🚗 Авто](pages/avto.md)'
           text: 'Продажа, проверка авто, поиск запчастей'
-          buttons:
-            - text: 'Открыть'
-              url: 'pages/avto.md'
-              theme: 'outlined'
-              size: 'm'
         border: true
 :::
