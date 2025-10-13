@@ -15,50 +15,86 @@ description: Стартовая страница с полезными ссыл�
 
 ## 📂 Основные категории
 
-- **[🌐 Интернет](pages/internet.md)**  
-  Поисковики, облака, почта, соцсети
+<div class="cards-grid">
 
-- **[🤖 AI](pages/ai.md)**  
-  ChatGPT, Gemini, генерация изображений
+<div class="card-item">
+<h3><a href="pages/internet.md">🌐 Интернет</a></h3>
+<p>Поисковики, облака, почта, соцсети</p>
+</div>
 
-- **[🏥 Медицина](pages/medicina.md)**  
-  Калькуляторы КТ, атласы, тесты НМО
+<div class="card-item">
+<h3><a href="pages/ai.md">🤖 AI</a></h3>
+<p>ChatGPT, Gemini, генерация изображений</p>
+</div>
 
-- **[🎵 Music Makes](pages/music-makes.md)**  
-  BeatStars, стоки, samples
+<div class="card-item">
+<h3><a href="pages/medicina.md">🏥 Медицина</a></h3>
+<p>Калькуляторы КТ, атласы, тесты НМО</p>
+</div>
 
-- **[📝 Офис](pages/ofis.md)**  
-  Перевод, рерайт, майндкарты
+<div class="card-item">
+<h3><a href="pages/music-makes.md">🎵 Music Makes</a></h3>
+<p>BeatStars, стоки, samples</p>
+</div>
 
-- **[🎬 Контент - Офишл](pages/kontent-ofishl.md)**  
-  Кинопоиск, Okko, YouTube
+<div class="card-item">
+<h3><a href="pages/ofis.md">📝 Офис</a></h3>
+<p>Перевод, рерайт, майндкарты</p>
+</div>
 
-- **[🛒 Покупки](pages/pokupki.md)**  
-  Маркетплейсы и лицензии
+<div class="card-item">
+<h3><a href="pages/kontent-ofishl.md">🎬 Контент - Офишл</a></h3>
+<p>Кинопоиск, Okko, YouTube</p>
+</div>
 
-- **[🏴‍☠️ Контент - Задворки](pages/kontent-zadvorki.md)**  
-  Альтернативные источники
+<div class="card-item">
+<h3><a href="pages/pokupki.md">🛒 Покупки</a></h3>
+<p>Маркетплейсы и лицензии</p>
+</div>
 
-- **[📚 Обучение](pages/obuchenie.md)**  
-  Школа, тренажёры, IT-курсы
+<div class="card-item">
+<h3><a href="pages/kontent-zadvorki.md">🏴‍☠️ Контент - Задворки</a></h3>
+<p>Альтернативные источники</p>
+</div>
 
-- **[💻 Разработка](pages/razrabotka.md)**  
-  GitHub, Python, компиляторы
+<div class="card-item">
+<h3><a href="pages/obuchenie.md">📚 Обучение</a></h3>
+<p>Школа, тренажёры, IT-курсы</p>
+</div>
 
-- **[🔒 IT - Безопасность](pages/it-bezopasnost.md)**  
-  VPN, менеджеры паролей
+<div class="card-item">
+<h3><a href="pages/razrabotka.md">💻 Разработка</a></h3>
+<p>GitHub, Python, компиляторы</p>
+</div>
 
-- **[🔍 IT - Поиск](pages/it-poisk.md)**  
-  OSINT, форумы, расширения
+<div class="card-item">
+<h3><a href="pages/it-bezopasnost.md">🔒 IT - Безопасность</a></h3>
+<p>VPN, менеджеры паролей</p>
+</div>
 
-- **[🎨 Дизайн](pages/dizayn.md)**  
-  Dribbble, стоки, шрифты
+<div class="card-item">
+<h3><a href="pages/it-poisk.md">🔍 IT - Поиск</a></h3>
+<p>OSINT, форумы, расширения</p>
+</div>
 
-- **[🎮 Досуг](pages/dosug.md)**  
-  Игры и развлечения
+<div class="card-item">
+<h3><a href="pages/dizayn.md">🎨 Дизайн</a></h3>
+<p>Dribbble, стоки, шрифты</p>
+</div>
 
-- **[🖥️ Оборудование](pages/oborudovanie.md)**  
-  Мониторы и комплектующие
+<div class="card-item">
+<h3><a href="pages/dosug.md">🎮 Досуг</a></h3>
+<p>Игры и развлечения</p>
+</div>
 
-- **[🚗 Авто](pages/avto.md)**  
-  Продажа, проверка, запчасти
+<div class="card-item">
+<h3><a href="pages/oborudovanie.md">🖥️ Оборудование</a></h3>
+<p>Мониторы и комплектующие</p>
+</div>
+
+<div class="card-item">
+<h3><a href="pages/avto.md">🚗 Авто</a></h3>
+<p>Продажа, проверка, запчасти</p>
+</div>
+
+</div>
