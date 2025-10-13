@@ -1,29 +1,38 @@
 /* Фиолетовая тема */
 :root {
   --yfm-color-base-brand: #8b5cf6;
-  --yfm-color-base-brand-hover: #7c3aed;
   --yfm-color-text-link: #8b5cf6;
-  --yfm-color-text-link-hover: #7c3aed;
 }
 
 /* ========================================
-   БОЛЬШИЕ КНОПКИ НА ГЛАВНОЙ СТРАНИЦЕ
+   ПРЕВРАЩАЕМ СПИСОК В КНОПКИ
    ======================================== */
 
-.nav-grid {
+/* Находим список после "Навигация" */
+.yfm-content h2:contains("Навигация") + ul,
+.yfm-content h2 + ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
+  list-style: none;
+  padding: 0;
   margin: 30px 0;
 }
 
-.nav-btn {
+/* Элементы списка = контейнеры кнопок */
+.yfm-content h2 + ul > li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ссылки = большие кнопки */
+.yfm-content h2 + ul > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 110px;
-  padding: 28px 24px;
-  font-size: 20px;
+  padding: 28px 20px;
+  font-size: 19px;
   font-weight: 600;
   line-height: 1.3;
   text-align: center;
@@ -34,10 +43,11 @@
   text-decoration: none;
   transition: all 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  word-wrap: break-word;
 }
 
-.nav-btn:hover {
+/* Hover эффект */
+.yfm-content h2 + ul > li > a:hover {
   transform: translateY(-5px);
   border-color: #8b5cf6;
   box-shadow: 0 10px 28px rgba(139, 92, 246, 0.35);
@@ -46,57 +56,46 @@
   text-decoration: none;
 }
 
-.nav-btn:active {
+/* Active */
+.yfm-content h2 + ul > li > a:active {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
 }
 
-/* Темная тема для кнопок */
-[data-theme='dark'] .nav-btn {
+/* Темная тема */
+[data-theme='dark'] .yfm-content h2 + ul > li > a {
   background: rgba(26, 26, 46, 0.6);
   border-color: rgba(139, 92, 246, 0.45);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-[data-theme='dark'] .nav-btn:hover {
+[data-theme='dark'] .yfm-content h2 + ul > li > a:hover {
   background: rgba(26, 26, 46, 0.8);
   box-shadow: 0 10px 28px rgba(139, 92, 246, 0.5);
   border-color: #a78bfa;
 }
 
-/* ========================================
-   СТИЛИЗАЦИЯ КАТОВ НА ДРУГИХ СТРАНИЦАХ
-   ======================================== */
-
-.yfm-cut {
-  margin: 16px 0;
-}
-
-.yfm-cut-title {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px 16px;
-  border-radius: 8px;
-  background: rgba(139, 92, 246, 0.08);
-  border-left: 4px solid #8b5cf6;
-  transition: all 0.2s ease;
-}
-
-.yfm-cut-title:hover {
-  background: rgba(139, 92, 246, 0.12);
-  transform: translateX(4px);
-}
-
 /* Адаптивность */
 @media (max-width: 768px) {
-  .nav-grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  .yfm-content h2 + ul {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     gap: 12px;
   }
   
-  .nav-btn {
+  .yfm-content h2 + ul > li > a {
     min-height: 95px;
-    font-size: 18px;
-    padding: 24px 20px;
+    font-size: 17px;
+    padding: 24px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .yfm-content h2 + ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .yfm-content h2 + ul > li > a {
+    min-height: 85px;
+    font-size: 16px;
   }
 }
