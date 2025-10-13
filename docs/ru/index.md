@@ -27,10 +27,8 @@ blocks:
     children:
       - type: 'layout-item'
         content:
-          title: '🌐 Интернет'
-          text: 'Поисковики, облачные хранилища, почта, соцсети'
           buttons:
-            - text: 'Открыть'
+            - text: '🌐 Интернет'
               url: 'pages/internet.md'
               theme: 'outlined'
               size: 'm'
